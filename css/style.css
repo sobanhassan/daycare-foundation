@@ -16,8 +16,8 @@
 .adjust {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 header {
@@ -166,4 +166,51 @@ footer {
 .footer-right a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .splash-grid {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    #item1 {
+        grid-column: 1/2;
+    }
+
+    .footer,
+    .footer-left,
+    .footer-mid {
+        display: block;
+        margin-top: 20px;
+    }
+
+    footer {
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    
+    .splash-grid div img, p {
+        width: 300px;
+    }
+
+    .splash-item {
+        width: auto;
+    }
+
+    .footer-mid img {
+        width: 300px;
+    }
+
+    .nav-logo img {
+        width: 250px;
+        padding: 0px 20px;
+    }
+
+    .footer-left div img {
+        width: 150px;
+    }
 }
