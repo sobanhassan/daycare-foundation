@@ -13,12 +13,12 @@
     cursor: pointer;
     padding: 8.5px 4px;
     z-index: 10;
-    background-color: var(--col3);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
 
 .burger div {
-    background-color: var(--col5);
+    background-color: black;
     width: 30px;
     height: 2px;
     margin: 7px;
